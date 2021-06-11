@@ -42,7 +42,7 @@ class Song
         @count[key] << value
       else
         @count[key] = []
-        @count[key] = counter
+        @count[key] = value
       end
       
       @count
