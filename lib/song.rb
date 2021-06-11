@@ -33,11 +33,19 @@ class Song
   end
   
   def self.genre_count
-    @hash_count = {}
-
+    @count = {}
+    counter = 0
+    
     @@genres.each do |key, value|
-      @hash_count[key] << [@@genres.count(value)]
-      puts @@genres.count(key)
+      if @count.has_key?(key)
+        @count[key] << counter += 1
+      else
+        @count[key] = []
+        @count[key] = counter
+      end
+      
+     # @hash_count[key] << [@@genres.count(value)]
+     # puts @@genres.count(key)
       
     end
         
