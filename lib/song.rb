@@ -33,7 +33,7 @@ class Song
   end
   
   def self.genre_count
-    count = {}
+    @count = {}
     
     @@genres.each do |key|
      value = @@genres.count(key)
@@ -46,10 +46,22 @@ class Song
       end
     end
     #binding.pry
-     count
+     @count
   end
   
   def self.artist_count
+    @count_artist = {}
+    
+    @@artists.each do |key|
+      value = @@artists.count(key)
+      if @count_artist.has_key?(key)
+        @count_artist[key] << value
+      else
+        @count_artist[key] = []
+        @count_artist[key] = value
+      end
+    end
+    @count_artist
     
   end
 
