@@ -44,13 +44,8 @@ class Song
         @count[key] = []
         @count[key] = value
       end
-      
-      @count
-     # @hash_count[key] << [@@genres.count(value)]
-     # puts @@genres.count(key)
-      
     end
-        
+     @count
   end
   
 
