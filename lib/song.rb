@@ -45,7 +45,7 @@ class Song
         @count[key] = value
       end
     end
-    binding.pry
+    #binding.pry
      @count
   end
   
