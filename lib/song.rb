@@ -38,8 +38,8 @@ class Song
     
     @@genres.each do |key|
       if @count.has_key?(key)
-        counter += 
-        @count[key] << counter
+        counter += 1
+        @count[key] = counter
       else
         @count[key] = []
         @count[key] = counter
