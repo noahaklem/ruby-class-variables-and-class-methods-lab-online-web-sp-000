@@ -39,7 +39,6 @@ class Song
      value = @@genres.count(key)
      binding.pry
       if @count.has_key?(key)
-        counter += 1
         @count[key] << value
       else
         @count[key] = []
