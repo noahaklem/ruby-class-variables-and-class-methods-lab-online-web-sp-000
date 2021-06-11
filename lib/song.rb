@@ -45,6 +45,7 @@ class Song
         @count[key] = counter
       end
       
+      @count
      # @hash_count[key] << [@@genres.count(value)]
      # puts @@genres.count(key)
       
