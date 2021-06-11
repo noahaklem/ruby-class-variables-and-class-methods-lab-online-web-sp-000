@@ -37,7 +37,7 @@ class Song
     
     @@genres.each do |key|
      value = @@genres.count(key)
-     binding.pry
+     #binding.pry
       if @count.has_key?(key)
         @count[key] << value
       else
