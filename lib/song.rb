@@ -34,11 +34,11 @@ class Song
   
   def self.genre_count
     @count = {}
-    counter = 1
+    counter = 0
     
     @@genres.each do |key|
       if @count.has_key?(key)
-        counter += 1 
+        counter += 
         @count[key] << counter
       else
         @count[key] = []
